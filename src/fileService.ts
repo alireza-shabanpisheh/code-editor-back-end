@@ -248,25 +248,11 @@ class FileService {
   private getDefaultContent(fileType: "html" | "css" | "js"): string {
     switch (fileType) {
       case "html":
-        return `<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>`;
+        return ` <!-- Your html code here --> `;
       case "css":
-        return `/* Your CSS styles here */
-
-`;
+        return `/* Your CSS styles here */`;
       case "js":
-        return `// Your JavaScript code here
-
-`;
+        return `// Your JavaScript code here`;
       default:
         return "";
     }
